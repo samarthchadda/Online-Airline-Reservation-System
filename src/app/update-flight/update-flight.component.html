@@ -1,0 +1,117 @@
+<h1 class="text-center"><u>Update Flight Details</u></h1>  
+<br><br>
+<!-- <h3>FlightId : {{ getFlightId }}</h3>
+
+<h4>FLight Information:  {{ this.service.flightData.FARE }} </h4>
+<input type="text" [(ngModel)]="this.service.flightData.FARE">
+<button class="btn btn-primary" (click)="updateFlightInfo()">Update Data</button> -->
+
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="flightCode">FLIGHT CODE</label>
+        <input type="text" class="form-control" id="flightCode"
+         placeholder="Code" 
+         [(ngModel)]="this.service.flightData.FLIGHT_CODE" readonly>
+         <!-- <h3 >Flight Code : {{ getFlightId }}</h3> -->
+      </div>
+      <div class="form-group col-md-6">
+        <label for="flightType">Flight Type</label>
+        <input type="text" class="form-control" id="flightType" 
+        placeholder="Type"
+        [(ngModel)]="this.service.flightData.FLIGHT_TYPE" >
+      </div>
+      <div class="form-group col-md-6">
+        <label for="source">Source</label>
+        <input type="text" class="form-control" id="source" placeholder="Arrival" 
+        [(ngModel)]="this.service.flightData.SOURCE">
+       </div>
+      <div class="form-group col-md-6">
+        <label for="destination">Destination</label>
+       <input type="text" class="form-control" id="destination" placeholder="Arrival" 
+       [(ngModel)]="this.service.flightData.DESTINATION">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="arrivalDate">Arrival Date/Time</label>
+        <label for="arrivalDate">(  YYYY-MM-DD hh:mm:ss  )</label>        
+        <input type="text" class="form-control" id="arrivalDate" placeholder="Arrival" 
+        [(ngModel)]="this.service.flightData.ARRIVAL">
+      </div>
+      <!-- <div class="form-group col-md-6">
+        <label for="arrivalTime">Arrival Time</label>
+        <input type="text" class="form-control" id="arrivalTime" placeholder="Arrival" 
+        [(ngModel)]="this.service.flightData.FARE">
+      </div> -->
+      <div class="form-group col-md-6">
+        <label class="text-center" for="deptDate">Departure Date/Time</label>
+        <label for="deptDate">(  YYYY-MM-DD hh:mm:ss  )</label>
+        <input type="text" class="form-control" id="deptDate" placeholder="Departure"
+        [(ngModel)]="this.service.flightData.DEPARTURE">
+      </div>
+     
+      <!-- <div class="form-group col-md-6">
+        <label for="deptTime">Departure Time</label>
+        <input type="text" class="form-control" id="deptTime" placeholder="Departure"
+        [(ngModel)]="this.service.flightData.FARE">
+      </div> -->
+      <div class="form-group col-md-6">
+        <label for="duration">Duration(in Minutes)</label>
+        <input type="text" class="form-control" id="duration"
+         placeholder="Code" 
+         [(ngModel)]="this.service.flightData.DURATION">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="stops">No. of Stops</label>
+        <input type="text" class="form-control" id="stops" 
+        placeholder="Type"
+        [(ngModel)]="this.service.flightData.NO_OF_STOPS">
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+        <label for="fare">Fare</label>
+        <input type="text" class="form-control" id="fare" placeholder="Fare"
+        [(ngModel)]="this.service.flightData.FARE">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="maintenance">Maintenance Cost</label>
+        <input type="text" class="form-control" id="maintenance" placeholder="Cost Of Maintenance"
+        [(ngModel)]="this.service.flightData.MAINTENANCE_COST">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="capacity">Capacity</label>
+        <input type="text" class="form-control" id="capacity" placeholder="Capacity"
+        [(ngModel)]="this.service.flightData.CAPACITY">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="amount">Total Amount</label>
+        <input type="text" class="form-control" id="amount" placeholder="Total Amount"
+        [(ngModel)]="this.service.flightData.TOTAL_AMOUNT">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="status">Status Of Flight</label>
+        <input type="text" class="form-control" id="status" placeholder="Status Of Flight"
+        [(ngModel)]="this.service.flightData.STATUS">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="daysOfRun">Days OF Run</label>
+        <input type="text" class="form-control"  style="margin-bottom: 25px;"
+         id="daysOfRun" placeholder="Enter in Binary Format"
+         [(ngModel)]="this.service.flightData.DAYS_OF_RUN">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="daysOfRun">Available Seats</label>
+        <input type="text" class="form-control"  style="margin-bottom: 25px;"
+         id="daysOfRun" placeholder="Enter in Binary Format"
+         [(ngModel)]="this.service.flightData.AVAILABLE_SEATS">
+      </div>
+        
+    
+    <button class="btn btn-success btn-block" 
+    style="margin-bottom: 50px; margin-top: 50px;"
+    (click)="updateFlightInfo()" >
+        <strong>
+        Update FLIGHT DETAILS
+        </strong>
+    </button>
+
+  

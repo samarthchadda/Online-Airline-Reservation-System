@@ -1,0 +1,162 @@
+<form  (ngSubmit)="AddFlight(form)" #form="ngForm">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="flightCode">FLight COde</label>
+        <input type="text" class="form-control" id="flightCode"
+         placeholder="Code" 
+         ngModel
+         name="flightCode">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="flightType">Flight Type</label>
+        <input type="text" class="form-control" id="flightType" 
+        placeholder="Type"
+        ngModel
+        name="flightType" >
+      </div>
+      <div class="form-group col-md-6">
+        <label for="source">Source</label>
+        <input type="text" class="form-control" id="source" placeholder="Arrival" 
+        ngModel
+        name="source">
+        <!-- <select id="source" class="form-control"
+        ngModel
+        name="source">
+            <option selected>Amritsar,Punjab</option>
+            <option selected>Jaipur,Rajasthan</option>
+            <option selected>Panaji,Goa</option>
+            <option selected>Chennai</option>
+            <option selected>Bangalore</option>
+            
+          </select> -->
+      </div>
+      <div class="form-group col-md-6">
+        <label for="destination">Destination</label>
+        <!-- <select id="destination" class="form-control"
+        ngModel
+        name="destination">
+          <option selected>Amritsar,Punjab</option>
+          <option selected>Jaipur,Rajasthan</option>
+          <option selected>Panaji,Goa</option>
+          <option selected>Chennai</option>
+          <option selected>Bangalore</option>
+          
+          </select> -->
+          <input type="text" class="form-control" id="destination" placeholder="Arrival" 
+        ngModel
+        name="destination">
+      </div>
+      <!-- <div class="form-group col-md-6">
+        <label for="arrivalDate">Arrival Date</label>
+        <input type="text" class="form-control" id="arrivalDate" placeholder="Arrival" 
+        ngModel
+        name="arrivalDate">
+      </div> -->
+      <div class="form-group col-md-6">
+        <label for="arrivalTime">Arrival Time</label>
+        <input type="time" class="form-control" id="arrivalTime" placeholder="Arrival" 
+        ngModel
+        name="arrivalTime">
+      </div>
+      <!-- <div class="form-group col-md-6">
+        <label for="deptDate">Departure Date</label>
+        <input type="text" class="form-control" id="deptDate" placeholder="Departure"
+        ngModel
+        name="deptDate">
+      </div> -->
+     
+      <div class="form-group col-md-6">
+        <label for="deptTime">Departure Time</label>
+        <input type="time" class="form-control" id="deptTime" placeholder="Departure"
+        ngModel
+        name="deptTime">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="duration">Duration(in Minutes)</label>
+        <input type="text" class="form-control" id="duration"
+         placeholder="Code" 
+         ngModel
+         name="duration">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="stops">No. of Stops</label>
+        <input type="text" class="form-control" id="stops" 
+        placeholder="Type"
+        ngModel
+        name="stops" >
+      </div>
+    </div>
+    <!-- <div class="form-group col-xs-12">
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div> -->
+    <div class="form-group col-md-6">
+        <label for="fare">Fare</label>
+        <input type="text" class="form-control" id="fare" placeholder="Fare"
+        ngModel
+        name="fare">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="maintenance">Maintenance Cost</label>
+        <input type="text" class="form-control" id="maintenance" placeholder="Cost Of Maintenance"
+        ngModel
+        name="maintenance">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="capacity">Capacity</label>
+        <input type="text" class="form-control" id="capacity" placeholder="Capacity"
+        ngModel
+        name="capacity">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="amount">Total Amount</label>
+        <input type="text" class="form-control" id="amount" placeholder="Total Amount"
+        ngModel
+        name="amount">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="status">Status Of Flight</label>
+        <input type="text" class="form-control" id="status" placeholder="Status Of Flight"
+        ngModel
+        name="status">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="daysOfRun">Days OF Run</label>
+        <input type="text" class="form-control"  style="margin-bottom: 25px;"
+         id="daysOfRun" placeholder="Enter in Binary Format"
+        ngModel
+        name="daysOfRun">
+      </div>
+     
+    
+      <!-- <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div> -->
+      <!-- <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <select id="inputState" class="form-control">
+          <option selected>Choose...</option>
+
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div> -->
+   
+   
+    
+    <button type="submit" class="btn btn-primary btn-block" 
+    style="margin-bottom: 50px; margin-top: 50px;" >
+        <strong>
+        Add FLIGHT
+        </strong>
+    </button>
+  </form>
+  

@@ -1,0 +1,42 @@
+<div class="row" style="margin-top: 50px;">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+        <!-- Displayed only when we have an error -->
+        <div class="alert alert-danger" *ngIf="error">
+            <p> {{ error }}</p>
+        </div>
+
+      
+        <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" >
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" 
+                class="form-control"
+                ngModel
+                name="email"
+                required
+                >  
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" 
+                class="form-control"
+                ngModel
+                name="password"
+                required
+                minlength="6">  
+                
+                <!-- Password should be min. of 6 characters -->
+            </div>
+                      
+
+
+            <div>
+                <button class="btn btn-primary" type="submit"  [disabled]="!authForm.valid">
+                    Sign In
+                    </button>    
+                  
+            </div>
+
+        </form>
+    </div>
+</div>

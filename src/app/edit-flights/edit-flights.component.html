@@ -1,0 +1,27 @@
+<div class="form-row">
+    <div class="form-group col-md-4">
+        <br><br><br>
+      <h2 class="text-center"><label for="inputEmail4" class="text-center">Flight Number : </label></h2>
+      <input type="text"
+       class="form-control"
+       id="inputEmail4"
+        placeholder="                    Enter Unique Flight Number"
+        [(ngModel)]="flightNo">
+   
+      <!-- <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password"> -->
+      <br>
+      <button class=" btn btn-primary btn-block" (click)="onLoadFlight()">Edit</button>
+      <button class=" btn btn-danger btn-block" (click)="onDeleteFlight()">Delete</button>
+      
+    </div>
+    
+    <div class="form-group col-md-5 " style="margin-left: 200px;">
+        
+        <router-outlet></router-outlet>
+      
+    </div>
+   
+  </div>
+
+
